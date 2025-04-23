@@ -64,7 +64,7 @@ class Trainer:
         self.config = config
         train_config = config.get("training")
         # based on config build:
-        # - the variables related to training the model
+        # - the variables related to training the model,
         # we start with this to get the seed for initialising the model
         for key, value in train_config.items():
             if key not in self._allowed_train_attrs:
